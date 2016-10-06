@@ -1,0 +1,242 @@
+/*  large scheme  */
+
+body	{
+	background: #ccc;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*  main page fonts  */ 
+
+p {
+	margin-top: 0;
+	margin-bottom: 1em;
+	font: 15px/20px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, arial, helvetica, sans-serif;
+	}
+	
+
+a:link, a:visited {
+	font-weight : bold; 
+	text-decoration : none;
+	color: #999;
+	background: transparent; 
+	}
+
+a:hover {
+	font-weight : bold; 
+	text-decoration : underline;
+	color: #666;
+	background: transparent; 
+	}
+
+a:active {
+	font-weight : bold; 
+	text-decoration : none;
+	color: #333;
+	background: transparent;  
+	}
+
+/*  header fonts  */ 
+
+h1, h2, h3, h4, h5, h6	{
+	font-weight: normal;
+	font-family: "American Typewriter", "Trebuchet MS", Trebuchet, Lucida, sans-serif;
+	}
+
+h1	{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 36px;
+	text-transform: lowercase;
+	}
+
+h2	{
+	font-size: 28px;
+	margin-top: 25px;
+	margin-bottom: 0;
+	letter-spacing: 1px;
+	}
+
+h3	{
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 0; 
+    }
+
+h4	{
+	font-size: 17px;
+	margin: 5px 0;
+	padding: 0;
+	letter-spacing: 1px;
+	}
+
+/*  main layout divs  */
+
+#container {
+	background: #fff;
+	border: 1px dotted #000;
+	margin: 10px;
+/*  if you want the layout centered, uncomment these next 2 lines */
+/*	margin-left: auto;
+	margin-right: auto; */
+	padding: 10px;
+	width: 722px;			/* false value for IE4-5.x/Win, like so: */	
+	voice-family: "\"}\"";	/* real width + l/r border + l/r padding = false value */
+	voice-family:inherit;	/* end false value for IE4-5.x/Win */
+	width: 700px;			/* real value for compliant browsers */
+}
+
+html>#container {
+	width: 700px;	/* be nice to Opera */
+}
+
+#banner {
+	padding: 2px 2px 2px 10px;
+	background-color: #999;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	font-size: 22px;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 0.33em;
+	text-align: left;
+}
+
+#sidebar {
+	float: left;
+	margin: 0;
+	margin-right: 2px;
+	padding: 2px;
+	background-color: #999;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #fff;
+	text-decoration: none;
+	width: 149px;			/* false value for IE4-5.x/Win, like so: */	
+	voice-family: "\"}\"";	/* real width + l/r border + l/r padding = false value */
+	voice-family:inherit;	/* end false value for IE4-5.x/Win */
+	width: 145px;			/* real value for compliant browsers */
+}
+
+html>#sidebar {
+	width: 145px;	/* be nice to Opera */
+}
+
+#content {
+	padding: 2px;
+	margin-left: 158px;
+	background-color: #fff;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	color: #000;
+	font-size: 16px;
+}
+
+/*  sidebar links  */
+
+#navcontainer ul 
+{
+	margin: 0; 
+	padding: 0 0 0 10px;
+	list-style-type: none; 
+	font: normal 14px/22px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+}
+
+#navcontainer li { margin: 0 0 3px 0; } 
+
+#navcontainer a 
+{
+	display: block; 
+	padding: 2px 2px 2px 20px; 
+	border: 1px dotted #fff; 
+	width: 100px; 
+	height: 20px; 
+	background-color: #333; 
+	/* background-image: url(images/roll_down.jpg); */
+	width: 124px;			/* false value for IE4-5.x/Win, like so: */	
+	voice-family: "\"}\"";	/* real width + l/r border + l/r padding = false value */
+	voice-family:inherit;	/* end false value for IE4-5.x/Win */
+	width: 100px;			/* real value for compliant browsers */
+}
+
+html>#navcontainer {
+	width: 100px;	/* be nice to Opera */
+}
+
+#navcontainer a:link, #navlist a:visited 
+{
+	font-size: 14px;
+	color: #eee; 
+	text-decoration: none; 
+}
+
+#navcontainer a:hover 
+{
+	font-size: 14px;
+	border: 1px dotted #fff; 
+	background-color: #666; 
+	/* background-image: url(images/roll_over.jpg); */
+	color: #fff; 
+}
+
+#active a:link, #active a:visited, #active a:hover 
+{
+	font-size: 14px;
+	border: 1px dotted #fff; 
+	background-color: #666; 
+	/* background-image: url(images/roll_over.jpg); */
+	color: #fff; 
+}
+
+/*  bo selecta!  */
+
+#styletool  {
+	border: 0;
+	margin: 10px 0 15px 0;
+	padding: 0 0 0 9px;
+	}
+
+#styletool img  {
+	display: inline;
+	border: 0;
+	padding: 2px;
+	}
+
+/* validation buttons  */
+
+#valid	{
+	border: 0;
+	margin: 10px 0 15px 20px;
+	}
+
+#valid img	{
+	display: inline;
+	border: 0;
+	padding: 2px 2px 2px 10px;
+	}	
+
+/*  search 	*/ 
+	
+#searchui	{
+	font: 13px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, arial, helvetica, sans-serif;
+	color: #fff;
+	background: transparent;
+	margin: 10px 5px;
+	}
+
+
+/*  da foot  */
+
+#footer {
+	clear: both;
+	padding: 2px;
+	margin-top: 2px;
+	background-color: #999;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	text-transform: lowercase;
+	color: #fff;
+	text-align: right;
+}

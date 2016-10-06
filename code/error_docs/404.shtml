@@ -1,0 +1,11 @@
+<html>
+<head>
+<title>404: doh!</title>
+</head>
+<body>
+<h1>404 error</h1>
+<p>The file doesn't exist, or has been moved</p>
+<p>Please try again from <a href="<!--#echo var="HTTP_REFERER"-->">the referring url</a></p>
+<pre><!--#exec cgi="../cgi-bin/error.pl"--></pre>
+</body>
+</html>

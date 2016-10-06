@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<title>basic xhtml/css layout</title>
+<link rel="stylesheet" type="text/css" href="css/green.css" title="green" /> 
+<link rel="alternate stylesheet" type="text/css" media="all" href="css/purple.css" title="purple" /> 
+<link rel="alternate stylesheet" type="text/css" media="all" href="css/large.css" title="large" /> 
+<link rel="alternate stylesheet" type="text/css" media="all" href="css/reverse.css" title="reverse" /> 
+<!-- the @import method only works from 5.0 and upwards  -->
+<!-- so, using @import would "hide" the more sophisticated sheet from < 5.0 browsers -->
+<!-- <style type="text/css" media="all">@import "fancy_style.css";</style> -->
+<script language="JavaScript" type="text/javascript" src="js/styleswitcher.js"></script> 
+</head>
+<body onload="window.defaultStatus='friends of ED | Mac OS X Web Development Fundamentals: Chapter 3'">
+<div id="container">
+<div id="banner"><h1>this is the #banner &lt;div&gt;</h1></div>
+<div id="sidebar">
+<div id="navcontainer">
+<ul id="navlist">
+<li id="active"><a href="/index.html" title="Back to the Home Page">Home</a></li>
+<li><a href="/link2.html" title="Link 2 title">Link 2</a></li>
+<li><a href="/link3.html" title="Link 3 title">Link 3</a></li>
+<li><a href="/link4.html" title="Link 4 title">Link 4</a></li>
+<li><a href="/link5.html" title="Link 5 title">Link 5</a></li>
+</ul>
+</div> <!-- end of the navcontainer div -->
+<div id="styletool">
+<a href="#" title="Switch Styles: green" onclick="setActiveStyleSheet('green'); return false;" accesskey="g"><img src="images/selector_green.gif" alt="Switch Styles: green" /></a> 
+<a href="#" title="Switch Styles: purple" onclick="setActiveStyleSheet('purple'); return false;" accesskey="p"><img src="images/selector_purple.gif" alt="Switch Styles: purple" /></a> 
+<a href="#" title="Switch Styles: large type" onclick="setActiveStyleSheet('large'); return false;" accesskey="l"><img src="images/selector_large.gif" alt="Switch Styles: large type" /></a> 
+<a href="#" title="Switch Styles: reverse colors, large type" onclick="setActiveStyleSheet('reverse'); return false;" accesskey="r"><img src="images/selector_large_reverse.gif" alt="Switch Styles: reverse colors, large type" /></a> 
+</div>
+<div id="valid">
+<a href="http://validator.w3.org/check/referer" title="Validated XHTML 1.0"><img src="images/xhtml10.png" alt="XHTML 1.0 valid" width="80" height="15" border="0" /></a><br />
+<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validated CSS"><img src="images/css.gif" alt="CSS valid" width="80" height="15" border="0" /></a><br />
+<a href="http://www.contentquality.com/mynewtester/cynthia.exe?Url1=http://www.freakindesign.com/booktest" title="Validated Section 508"><img src="images/sec508a.gif" alt="508 valid" width="80" height="15" border="0" /></a>
+</div>
+</div> <!-- end of the sidebar div -->
+<div id="content">
+<p>this is the #content &lt;div&gt;</p>
+<p><a href="http://www.lipsum.com/" title="why do we use Lorem ipsum?">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. <a href="http://www.lipsum.com/" title="why do we use Lorem ipsum?">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. <a href="http://www.lipsum.com/" title="why do we use Lorem ipsum?">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+</div> <!-- end of the content div -->
+<div id="footer">this is the #footer &lt;div&gt;<br />everything &copy;2003 freakindesign</div>
+</div> <!-- end of the container div -->
+</body>
+</html>
